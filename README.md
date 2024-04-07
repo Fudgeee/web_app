@@ -14,7 +14,6 @@ A web application with a list of European countries and the current exchange rat
    ```bash
    composer install
 
-
 3. Create database
 
    ```bash
