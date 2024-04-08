@@ -7,7 +7,9 @@ Tested on Linux.
 ## Requirements
 
    php 8+
+
    composer
+
    mysql
 
 ## Installation
@@ -30,14 +32,15 @@ Tested on Linux.
 
 4. Configure the .env file:
 
-   DB_DATABASE=web_app
-   DB_USERNAME=root
-   DB_PASSWORD=
+   DB_DATABASE=your_database_name
+
+   DB_USERNAME=your_username
+
+   DB_PASSWORD=your_password
 
 5. Configure php.ini file:
 
-   uncomment extension=mysqli
-             extension=pdo_mysql
+   uncomment extension=mysqli and extension=pdo_mysql
 
 5. Make the migrations:
 
