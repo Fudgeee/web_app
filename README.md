@@ -2,6 +2,15 @@
 
 A web application with a list of European countries and the current exchange rates of their currencies.
 
+Tested on Linux.
+
+## Requirements
+
+   php 8+
+   composer
+   mysql
+   apache2
+
 ## Installation
 
 1. Clone this repository:
@@ -14,13 +23,17 @@ A web application with a list of European countries and the current exchange rat
    ```bash
    composer install
 
-3. Create database
+3. Create database:
 
    ```bash
    mysql -u your_username -p
    CREATE DATABASE your_database_name;
 
-4. Configure the .env file 
+4. Configure the .env file:
+
+   DB_DATABASE=web_app
+   DB_USERNAME=root
+   DB_PASSWORD=Heslo12345!
 
 5. Make the migrations:
 

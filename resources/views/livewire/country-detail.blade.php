@@ -18,6 +18,8 @@
                                 € {{ $lastRate }}
                             @else
                                 € {{ $lastRate->rate }}
+                                <br>
+                                {{$country->currency}} {{ $lastRate->rate }} / 1 EUR
                             @endif
                         </h1>
                         <p class="{{ $changeDirection === 'up' ? 'text-success' : 'text-danger' }} mb-0">
