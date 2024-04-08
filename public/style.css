@@ -11,7 +11,8 @@ html{
     background-size: cover;
 }
 
-h1{
+h1,
+h2{
     color: white;
     text-shadow: 2px 2px 3px #007bff;
 }

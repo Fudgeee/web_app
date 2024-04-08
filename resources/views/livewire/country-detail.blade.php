@@ -13,15 +13,13 @@
                 <div class="col-lg-6 col-md-6" style="min-height: 160px;">
                     <p>Currency: <b>{{ $country->currency }}</b></p>
                     @if ($lastRate)
-                        <h1 class="black max-width-fit-content float-start me-2">
+                        <h2 class="black max-width-fit-content float-start me-2">
                             @if ($country->currency === "EUR")
                                 € {{ $lastRate }}
                             @else
-                                € {{ $lastRate->rate }}
-                                <br>
                                 {{$country->currency}} {{ $lastRate->rate }} / 1 EUR
                             @endif
-                        </h1>
+                        </h2>
                         <p class="{{ $changeDirection === 'up' ? 'text-success' : 'text-danger' }} mb-0">
                             <b>{{ number_format($percentageChange, 2) }}%</b>
                             @if ($changeDirection === 'up')

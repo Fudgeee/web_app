@@ -9,7 +9,6 @@ Tested on Linux.
    php 8+
    composer
    mysql
-   apache2
 
 ## Installation
 
@@ -33,7 +32,12 @@ Tested on Linux.
 
    DB_DATABASE=web_app
    DB_USERNAME=root
-   DB_PASSWORD=Heslo12345!
+   DB_PASSWORD=
+
+5. Configure php.ini file:
+
+   uncomment extension=mysqli
+             extension=pdo_mysql
 
 5. Make the migrations:
 
