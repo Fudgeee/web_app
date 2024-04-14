@@ -54,7 +54,7 @@ Tested on Linux.
    php artisan countries:populate
    php artisan currency:update
 
-7. Start the web server:
+7. Start the web server at localhost:8000 :
 
    ```bash
    php artisan serve
